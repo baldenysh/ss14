@@ -1,0 +1,20 @@
+- type: antag
+  id: Cultist
+  name: roles-antag-cultist-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-cultist-objective
+
+- type: antag
+  id: HeadCultist
+  name: roles-antag-head-cultist-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-head-cultist-objective
+  
+- type: antag
+  id: NarSie
+  name: roles-antag-narsie-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-narsie-objective

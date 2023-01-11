@@ -103,3 +103,28 @@
   - type: Item
     size: 10
     sprite: Objects/Weapons/Melee/survival_knife.rsi
+
+- type: entity
+  name: ritual dagger
+  parent: BaseKnife
+  id: RitualDagger
+  description: Your dagger is your most important tool and can be used to draw runes.
+  components:
+  - type: Tag
+    tags:
+    - Knife
+  - type: Sprite
+    sprite: Objects\Weapons\Melee\ritual_dagger.rsi
+    size: 4
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 10
+        Piercing: 5
+        Poison: 5
+        Structural: 5
+  - type: Item
+    size: 10
+    sprite: Objects\Weapons\Melee\ritual_dagger.rsi

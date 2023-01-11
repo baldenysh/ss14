@@ -86,3 +86,13 @@
     - 't'
   frequency: 1213
   color: "#8f4a4b"
+  
+- type: radioChannel
+  id: Cult
+  name: chat-radio-cult
+  keycodes:
+    - 'г'
+    - 'g'
+  frequency: 6666
+  color: "#c3554b"
+
