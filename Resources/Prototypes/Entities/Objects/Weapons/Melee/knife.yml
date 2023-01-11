@@ -124,7 +124,6 @@
         Slash: 10
         Piercing: 5
         Poison: 5
-        Structural: 5
   - type: Item
     size: 10
     sprite: Objects\Weapons\Melee\ritual_dagger.rsi
