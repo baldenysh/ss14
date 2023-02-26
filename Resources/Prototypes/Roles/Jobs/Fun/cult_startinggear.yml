@@ -1,6 +1,6 @@
 #Cult outfit startingGear definitions.
 - type: startingGear
-  id: CultLeaderGear
+  id: HeadCultGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBlack
     back: ClothingBackpackFilled

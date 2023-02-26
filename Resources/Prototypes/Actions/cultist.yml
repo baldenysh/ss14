@@ -1,0 +1,14 @@
+- type: instantAction
+  id: CultistBloodSpellsInstantAction
+  icon: Interface/Actions/tome.png
+  name: BloodSpells
+  description: Opens the blood spells menu.
+  serverEvent: !type:CultistBloodSpellsInstantActionEvent
+
+- type: instantAction
+  id: CultistCommunicateInstantAction 
+  icon: Interface/Actions/coms.png
+  name: Communicate
+  description: Allows you to send message to other cultists.
+  serverEvent: !type:CultistCommunicateInstantActionEvent
+  useDelay: 10

@@ -95,6 +95,26 @@
     - BasicStationEventScheduler
 
 - type: gamePreset
+  id: Cultists
+  alias:
+    - cult
+    - Cult
+    - cultists
+    - Narsi
+    - Narsie
+    - narSi
+    - narSie
+    - narsi
+    - narsie
+    - NarSi
+    - NarSie
+  name: cultists-title
+  description: cultists-description
+  showInVote: false
+  rules:
+    - Cultists
+    
+- type: gamePreset
   id: Zombie
   alias:
     - zombie

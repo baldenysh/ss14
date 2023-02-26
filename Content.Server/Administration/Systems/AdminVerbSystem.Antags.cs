@@ -15,6 +15,7 @@ public sealed partial class AdminVerbSystem
     [Dependency] private readonly TraitorRuleSystem _traitorRule = default!;
     [Dependency] private readonly NukeopsRuleSystem _nukeopsRule = default!;
     [Dependency] private readonly PiratesRuleSystem _piratesRule = default!;
+    [Dependency] private readonly CultistRuleSystem _cultistsRule = default!;
 
     // All antag verbs have names so invokeverb works.
     private void AddAntagVerbs(GetVerbsEvent<Verb> args)
@@ -101,5 +102,21 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(pirate);
 
+        Verb cultist = new()
+        {
+            Text = "Make Cultist",
+            Category = VerbCategory.Antag,
+            IconTexture = "/Textures/Clothing/Head/Helmets/cult.rsi/icon.png",
+            Act = () =>
+            {
+                if (targetMindComp.Mind == null || targetMindComp.Mind.Session == null)
+                    return;
+
+                _cultistsRule.MakeCultist(targetMindComp.Mind);
+            },
+            Impact = LogImpact.High,
+            Message = Loc.GetString("admin-verb-make-cultist"),
+        };
+        args.Verbs.Add(cultist);
     }
 }

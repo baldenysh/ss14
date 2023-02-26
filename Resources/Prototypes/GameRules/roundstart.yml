@@ -25,6 +25,12 @@
     id: Nukeops
 
 - type: gameRule
+  id: Cultists
+  config:
+    !type:CultistsRuleConfiguration
+    id: Cultists
+
+- type: gameRule
   id: Pirates
   config:
     !type:GenericGameRuleConfiguration

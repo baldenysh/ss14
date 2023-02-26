@@ -9,12 +9,12 @@
   id: HeadCultist
   name: roles-antag-head-cultist-name
   antagonist: true
-  setPreference: true
+  setPreference: false
   objective: roles-antag-head-cultist-objective
   
 - type: antag
-  id: NarSie
+  id: Narsi
   name: roles-antag-narsie-name
   antagonist: true
-  setPreference: true
+  setPreference: false
   objective: roles-antag-narsie-objective
